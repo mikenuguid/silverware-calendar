@@ -62,7 +62,7 @@ class FormFieldExtension extends Extension
             $this->calendarConfig[$arg1] = $arg2;
         }
         
-        return $this;
+        return $this->owner;
     }
     
     /**
@@ -92,7 +92,7 @@ class FormFieldExtension extends Extension
     {
         $this->calendarDisabled = (boolean) $calendarDisabled;
         
-        return $this;
+        return $this->owner;
     }
     
     /**
